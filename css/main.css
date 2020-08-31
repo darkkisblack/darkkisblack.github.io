@@ -398,6 +398,9 @@ img {
 .interactive-avatar--active {
   border-color: #0f5a47;
 }
+.interactive-avatar:hover {
+  border-color: #0f5a47;
+}
 
 .interactive-avatar__link {
   position: absolute;
@@ -428,6 +431,7 @@ img {
 
 .order-section {
   background: url("/img/order/delivery.png") center center no-repeat, url(/img/order/berries-order.png) left top 146% no-repeat;
+  background-size: cover;
 }
 
 .form {
@@ -445,6 +449,9 @@ img {
 .form__row {
   display: flex;
   margin-bottom: 27px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
 }
 
 .form__block {
