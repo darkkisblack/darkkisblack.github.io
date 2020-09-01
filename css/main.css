@@ -430,8 +430,22 @@ img {
 }
 
 .order-section {
-  background: url("/img/order/delivery.png") center center no-repeat, url(/img/order/berries-order.png) left top 146% no-repeat;
+  background: url("/img/order/pattern.png") center center no-repeat;
   background-size: cover;
+}
+
+.order__container:before {
+  position: absolute;
+  bottom: -15px;
+  left: -6%;
+  content: url(/img/order/berries-order.png);
+}
+
+.order__container:after {
+  content: url(/img/order/leaf-order.png);
+  position: absolute;
+  bottom: -8px;
+  right: -9%;
 }
 
 .form {
