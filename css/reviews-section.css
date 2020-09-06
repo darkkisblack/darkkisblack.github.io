@@ -5,6 +5,6 @@
 .reviews-section:before {
   content: url("/img/reviews/pattern-barries.png");
   position: absolute;
-  bottom: -94px;
+  bottom: rem(-94px);
   left: 0;
 }

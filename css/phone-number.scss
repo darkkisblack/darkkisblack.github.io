@@ -1,0 +1,52 @@
+.phone-number {
+  font-size: rem(24px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &--theme--green {
+    color: $darkGreen;
+  }
+}
+
+.phone-number__text {
+  white-space: nowrap;
+}
+
+.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
+
+.phone-number__icon {
+  flex-shrink: 0;
+}
+
+.phone-number__icon-elem {
+  width: rem(12px);
+height: rem(12px);
+margin-right: rem(6px);
+  fill:$darkGreen;
+  
+
+  &:hover {
+    fill: red;
+   
+  }
+
+}
+
+.phone-number__icon-white {
+width: rem(12px);
+height: rem(12px);
+margin-right: rem(6px);
+  fill:white;
+  
+
+  &:hover {
+    fill: #c6512e;
+   
+  }
+
+}

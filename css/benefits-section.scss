@@ -2,11 +2,28 @@
   position: relative;
   background: url("/img/hero/side-leaf.png") left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top -45%;
+
+    @include phones {
+      background: none;
+    }
+  }
+
   &:before {
     content: url("/img/hero/bars-and-berries.png");
     position: absolute;
-    bottom: -146px;
+    bottom: rem(-273px);
     left: 0;
+
+    @include tablets {
+     bottom: rem(-120px);
+      left: 0;
+
+      @include phones {
+        display: none;
+      }
+    }
 
   }
 }

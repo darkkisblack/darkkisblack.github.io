@@ -2,14 +2,19 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 23px;
+  align-items: center;
+  margin-right: rem(23px);
+
+  
   
   &:last-child {
     margin-right: 0;
   }
-
+@include phones {
+    margin-bottom: rem(10px);
+  }
   &--checkbox {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     .radio__visible {
       border-radius: 0;  
 
@@ -31,17 +36,17 @@
 }
 
 .radio__visible {
-width: 26px;
-height: 26px;
+width: rem(26px);
+height: rem(26px);
 position: relative;
 border-radius: 50%;
 background: #fff;
-margin-right: 9px;
+margin-right: rem(9px);
 
 &:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   background: #365A49;
   border-radius: 50%;
   position: absolute;
