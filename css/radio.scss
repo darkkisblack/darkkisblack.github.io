@@ -10,9 +10,7 @@
   &:last-child {
     margin-right: 0;
   }
-@include phones {
-    margin-bottom: rem(10px);
-  }
+
   &--checkbox {
     margin-bottom: rem(10px);
     .radio__visible {

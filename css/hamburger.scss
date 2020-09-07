@@ -8,7 +8,10 @@
 
   @include tablets {
      display: inline-flex;
+     position: fixed;
+     right: 3%;
   }
+
 }
 
 .hamburger__plank {

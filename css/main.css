@@ -351,6 +351,9 @@ img {
     padding: 0;
     margin-bottom: 1.0555555556rem;
   }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .benefits__item:before {
   content: url(/img/hero/separator.png);
@@ -692,6 +695,7 @@ img {
 @media screen and (max-width: 480px) {
   .form__controls {
     justify-content: center;
+    margin-bottom: 0.5555555556rem;
   }
 }
 
@@ -712,11 +716,6 @@ img {
 }
 .radio:last-child {
   margin-right: 0;
-}
-@media screen and (max-width: 480px) {
-  .radio {
-    margin-bottom: 0.5555555556rem;
-  }
 }
 .radio--checkbox {
   margin-bottom: 0.5555555556rem;
@@ -927,6 +926,8 @@ img {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
+    position: fixed;
+    right: 3%;
   }
 }
 
