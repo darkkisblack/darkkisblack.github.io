@@ -1,0 +1,249 @@
+.slider {
+  &::after{
+      content:"";
+      width:20%;
+      height:20%;
+      max-width:rem(135px);
+      max-height:rem(112px);
+      position: absolute;
+      right:0;
+      bottom:-50px;
+      background: url("/img/product-section/blackberries.png") center center no-repeat;
+      background-size: contain;
+      @include tablets {
+        right:rem(-20px);
+      }
+  }
+}
+
+.slider-container {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.slider__item {
+  height:100%;
+  width:100%;
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index:50;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.slider__item--active {
+  display: flex;
+}
+
+
+.slider-col{
+  width:45%;
+  @include tablets {
+    width:80%;
+  }
+}
+
+
+//left-col
+
+.slider__left-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: rem(90px);
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:0;
+    margin-bottom: rem(20px);
+  }
+}
+
+.slider__left-col img{
+  @include tablets{
+    max-height:rem(250px);
+    max-width:rem(200px);
+  }
+
+
+   //&::after {
+    // content: "";
+//     position: absolute;
+//    width: rem(462px);
+//    height: rem(326px);
+//    background: url("/img/product-section/slider__leaf.png");
+//    @include cover {
+//    left:0;
+//     bottom:0; 
+ //   }
+     
+}
+   
+  
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: rem(462px);
+  //   height: rem(326px);
+  //   background: url("../img/seaweed__back.png");
+  //   @include cover;
+  //   left:0;
+  //   bottom:0;
+  // }
+
+//right-col
+
+
+.slider__right-col {
+  display: flex;
+  flex-direction: column;
+
+  @include tablets{
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.slider__right-col h3 {
+  font-size: rem(36px);
+  color: #0d0d0d;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include tablets{
+    margin-bottom: 5px;
+  }
+  @include phones{
+    font-size: rem(24px);
+  }
+}
+
+.slider__right-col .composition {
+  font-size: rem(24px);
+  font-weight: 500;
+  color: #323232;
+  margin-bottom: rem(30px);
+  @include tablets{
+    margin-bottom: 5px;
+  }
+}
+
+.slider__right-col p {
+  font-size: rem(18px);
+  color: #666666;
+  margin-bottom: rem(50px);
+  @include tablets{
+    margin-bottom: 5px;
+  }
+}
+
+//nutritional value
+
+.nutritional-value {
+  display: flex;
+  text-align: left;
+  margin-bottom: rem(35px);
+  @include tablets{
+    margin-bottom: 5px;
+  }
+}
+
+
+.nutritional-value__item span{
+  display: block;
+}
+
+.nutritional-value__item span:not(:last-child) {
+  margin-bottom: rem(5px);
+}
+
+.nutritional-value__item span:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.nutritional-value__item:not(:last-child) {
+  margin-right: rem(50px);
+}
+
+
+//Button-row
+
+
+.slider__btn-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.slider__btn-wrapper div {
+  display: block;
+  font-size: rem(60px);
+  font-weight: 300;
+  color: #0d0d0d;
+  margin-right: rem(30px);
+  @include phones{
+    font-size: rem(40px);
+  }
+}
+
+.slider__btn {
+  color: #fff;
+  background-color: #0f5a47;
+}
+
+
+//Arrow
+
+.slider__arrow{
+  width:rem(30px);
+  height:rem(30px);
+  position: absolute;
+  top:50%;
+  border-left:rem(3px) solid black;
+  border-bottom:rem(3px) solid black;
+  border-bottom-left-radius: rem(6px);
+  cursor: pointer;
+  z-index: 100;
+
+
+  @include tablets{
+    top:20%;
+  }
+  
+  
+}
+
+.arrow-left{
+  left:rem(-20px);
+  transform: rotate(45deg);
+
+  @include tablets { 
+    left: rem(30px);
+
+     }
+
+    @include phones {
+      left: rem(30px);
+    }
+}
+
+.arrow-right{
+  right:rem(-15px);
+  transform: rotate(-135deg);
+
+  @include tablets {
+    right: rem(30px);
+
+  }
+
+  @include phones {
+
+    right: rem(30px);
+  }
+}

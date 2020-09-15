@@ -2,6 +2,10 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 
 
+$z-berries: 1;
+$z-content: 10;
+$z-overlay: 100;
+
 //breakpoints
 $tablets: 768px;
 $phones: 480px;
@@ -49,3 +53,7 @@ $z-fixed-menu:100;
 @import "contacts";
 @import "phone-number";
 @import "hamburger";
+@import "fullscreen-menu";
+@import "ingredients";
+@import "mixins";
+@import "slider";

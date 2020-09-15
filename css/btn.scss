@@ -31,7 +31,23 @@
       background: #fff;
       transition: 0.2s;
     }
+
+    
+  
   }
+
+  &--theme--slider {
+      background: $darkGreen;
+      color: #fff;
+      
+  
+      &:hover {
+        color: #fff;
+        background: #365a49;
+        transition: 0.2s;
+      }
+
+    }
 
   &--theme--transparent {
     background: transparent;
