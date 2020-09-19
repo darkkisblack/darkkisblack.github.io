@@ -28,6 +28,10 @@ body {
   columns: #666666;
 }
 
+.locked {
+  overflow: hidden;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -928,11 +932,12 @@ img {
 .hamburger-menu-link {
   display: flex;
   align-items: center;
-  position: relative;
+  position: fixed;
   height: 1.2222222222rem;
   align-items: center;
   margin-left: 1.6666666667rem;
   display: none;
+  right: 3%;
 }
 @media screen and (max-width: 768px) {
   .hamburger-menu-link {

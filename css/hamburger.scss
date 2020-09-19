@@ -1,11 +1,12 @@
 .hamburger-menu-link {
 	display:flex;
 	align-items:center;
-	position: relative;
+	position: fixed;
 	height: rem(22px);
 	align-items: center;
 	margin-left: rem(30px);
 	display: none;
+	right: 3%;
 
 	@include tablets {
 		display: inline-flex;
