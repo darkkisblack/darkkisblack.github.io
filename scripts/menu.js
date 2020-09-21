@@ -34,6 +34,7 @@ let fixedNavbarItem = document.querySelectorAll(".fixed-navbar__item"),
 
 for (let i = 0; i < fixedNavbarItemLength; i++) {
   fixedNavbarItem[i].addEventListener("click", function(e) {
+    e.preventDefault
     fixedNavbar.style.display = "none";
     document.body.classList.remove("locked");
   });

@@ -23,7 +23,13 @@
   }
 }
 
-.reviews__display-inner {
+.reviews__item {
+
+  display:none;
+  z-index: 10;
+}
+
+.reviews__item--active {
   display: flex;
 
   @include tablets {

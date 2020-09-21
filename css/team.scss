@@ -1,0 +1,162 @@
+.team__container {
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  .team__title {
+    text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #0d0d0d;
+    margin-bottom: rem(65px);
+    @include tablets{
+      align-items: center;
+      font-size: rem(30px);
+      margin-bottom: rem(5px);
+    }
+  }
+  
+  .team__list {
+    display: flex;
+    z-index: 20;
+  
+    @include tablets{
+      display:grid;
+      grid-template-columns:rem(150px) rem(150px);
+      grid-template-rows:auto auto;
+      grid-row-gap: 10px;
+      grid-column-gap:rem(15px);
+    }
+  }
+  
+  .team__item {
+    max-width: rem(222px);
+    text-align: center;
+  }
+  
+  .team__item:nth-child(even) {
+    
+    @include tablets {
+      margin-top:0;
+    }
+  }
+  
+  .team__item:not(:last-child) {
+    margin-right: rem(15px);
+  
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+  
+  .team__img {
+    margin-bottom: rem(25px);
+    @include tablets{
+      margin-bottom:0;
+    }
+  }
+  .name {
+    display: block;
+    position: relative;
+    font-size: rem(21px);
+    font-weight: bold;
+    color: #323232;
+    margin-right: rem(5px);
+    margin-bottom: rem(13px);
+  
+    @include tablets{
+      font-size: rem(16px);
+      margin-bottom: 0;
+    }
+  }
+  
+  .name::after {
+    content: "";
+    margin-left: rem(5px);
+    position: absolute;
+    border-left: rem(7px) solid transparent;
+    border-right: rem(7px) solid transparent;
+    border-top: rem(7px) solid #0f5a47;
+    top: rem(10px);
+    cursor: pointer;
+  }
+  
+  .team__item--active .name::after {
+    border-top: none;
+    border-bottom: rem(7px) solid #0f5a47;
+  }
+  
+  .team__accordion {
+    opacity:0;
+    transition: all .5s linear;
+    @include tablets{
+      max-height: 0;
+  
+    }
+  }
+  
+  .team__item--active .team__accordion {
+    opacity:1;
+    @include tablets{
+      max-height:rem(420px);
+    }
+  }
+  
+  .team__accordion span {
+    display: block;
+    font-size: rem(18px);
+    font-weight: bold;
+    color: #281e1e;
+    margin-bottom: rem(5px);
+    @include tablets{
+      font-size: rem(16px);
+      margin-bottom: 0;
+    }
+  }
+  
+  .team__accordion p {
+    font-size: rem(18px);
+    font-weight: 300;
+    @include tablets{
+      font-size: rem(14px);
+      margin-bottom: 0;
+    }
+  }
+
+  .position {
+    color: #292929;
+  }
+
+  .description {
+    color: #666666;
+  }
+  
+
+  .team__list--mobile {
+    display: none;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    @include phones {
+      display: flex;
+    }
+
+    
+  }
+
+  .team__list--desctop {
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
