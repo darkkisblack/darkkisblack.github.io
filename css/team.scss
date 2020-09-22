@@ -64,6 +64,7 @@
     color: #323232;
     margin-right: rem(5px);
     margin-bottom: rem(13px);
+    cursor: pointer;
   
     @include tablets{
       font-size: rem(16px);

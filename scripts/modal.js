@@ -175,6 +175,8 @@ $('.form').submit(e => {
     });
 
   } 
+
+  $('.form')[0].reset();
 });
 
 $(".app-submit-btn").click(e =>{

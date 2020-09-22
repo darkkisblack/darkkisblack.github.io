@@ -1462,6 +1462,7 @@ img {
   color: #323232;
   margin-right: 0.2777777778rem;
   margin-bottom: 0.7222222222rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .name {
