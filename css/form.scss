@@ -10,9 +10,24 @@
     }
    
   }
- 
-
 }
+ 
+  .form::after {
+    content: "";
+    position: absolute;
+    background: url(/img/form/berry.png);
+    width: rem(196px);
+    height: rem(264px);
+    top: -51%;
+    right: -22%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+
+
 
 .form__col {
   flex: 1;

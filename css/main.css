@@ -614,7 +614,6 @@ img {
 .order-section {
   background: url("/img/order/pattern.png") center center no-repeat;
   background-size: cover;
-  margin-bottom: 30px;
 }
 
 .order__container:before {
@@ -654,6 +653,19 @@ img {
   .form {
     padding: 0;
   }
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  background: url(/img/form/berry.png);
+  width: 10.8888888889rem;
+  height: 14.6666666667rem;
+  top: -51%;
+  right: -22%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .form__col {
@@ -815,10 +827,9 @@ img {
 #map {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
-  background: url("/img/map/map.jpg") center center/cover no-repeat;
 }
 
 .footer {
@@ -1176,7 +1187,7 @@ img {
   max-height: 6.2222222222rem;
   position: absolute;
   right: 0;
-  bottom: -50px;
+  bottom: 62%;
   background: url("/img/product-section/blackberries.png") center center no-repeat;
   background-size: contain;
 }
@@ -1599,4 +1610,309 @@ img {
 
 .error-modal {
   color: red;
+}
+
+.products-menu-section {
+  background: url("/img/menu/menu__back.png") center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.products-menu-section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.products-menu__item {
+  display: flex;
+  /* &.active {
+     .products-menu__content {
+       display: block;
+       max-width: 532px;
+     }
+   }*/
+}
+
+.products-menu__image {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-menu__title {
+  position: relative;
+  width: 100px;
+}
+.products-menu__title:after {
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.title.products-menu-section__title {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  color: #fff;
+}
+
+.products-menu__text {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+
+.products-menu__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.products-menu__close:focus {
+  outline: none;
+}
+.products-menu__close:hover {
+  border-color: lightskyblue;
+}
+
+.products-menu__container {
+  padding: 40px 73px 45px 26px;
+}
+
+.player-section::before {
+  background-image: url(/img/video/berry.png);
+  width: 12.3125rem;
+  height: 16.5rem;
+  bottom: -6.5rem;
+  right: 0;
+}
+
+.player-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#player_content {
+  max-width: 36.6666666667rem;
+  max-height: 20.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  #player_content {
+    max-width: 22.2222222222rem;
+    max-height: 11.1111111111rem;
+  }
+}
+
+.player__splash {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/video/splash.png") center center/cover no-repeat;
+  cursor: pointer;
+}
+.player__splash:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.7777777778rem 0 2.7777777778rem 4.4444444444rem;
+  border-color: transparent transparent transparent #fff;
+}
+
+.player__wrapper {
+  position: relative;
+}
+.player__wrapper--active .player__splash {
+  display: none;
+}
+
+.player_controls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.9444444444rem;
+  padding: 0 1.1111111111rem;
+  background-color: #3e3e3e;
+}
+@media screen and (max-width: 768px) {
+  .player_controls {
+    padding: 0 0.5555555556rem;
+  }
+}
+
+.player_btn {
+  cursor: pointer;
+  width: 0.8888888889rem;
+  height: 1.2222222222rem;
+  border-left: solid 10px #626262;
+  border-bottom: solid 10px transparent;
+  border-top: solid 10px transparent;
+  margin-right: 0.5555555556rem;
+}
+
+.player_paused {
+  border: 0;
+  position: relative;
+}
+.player_paused::after, .player_paused::before {
+  position: absolute;
+  content: "";
+  width: 0.2777777778rem;
+  height: 1.2222222222rem;
+  background-color: #626262;
+}
+.player_paused::after {
+  right: 0;
+}
+
+.player_range {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+}
+
+.player_timer_wrap {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 1.6666666667rem;
+  margin-right: 0.5555555556rem;
+}
+
+.play_timer {
+  width: 100%;
+}
+
+.player__duration {
+  margin-right: 0.5555555556rem;
+  display: flex;
+  color: #fff;
+}
+.player__duration-completed {
+  margin-right: 0.2777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .player__duration {
+    font-size: 0.7222222222rem;
+  }
+}
+
+.player__duration span {
+  width: 1.6666666667rem;
+}
+
+.player_volume {
+  display: flex;
+  align-items: center;
+}
+
+.volume_range-wrap {
+  width: 2.2222222222rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 1.6666666667rem;
+}
+
+.volume_range {
+  width: 100%;
+}
+
+.volume_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.8333333333rem;
+  transform: rotate(180deg);
+}
+.volume_btn::after {
+  position: absolute;
+  content: "";
+  left: -5px;
+  width: 0.4444444444rem;
+  height: 0.4444444444rem;
+  border-radius: 50%;
+  background-color: #626262;
+}
+
+.volume_btn--active::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  right: 0.5555555556rem;
+  height: 1.3888888889rem;
+  background-color: #626262;
+  transform: rotate(50deg);
+}
+
+.play_point {
+  display: block;
+  position: absolute;
+  width: 0.5555555556rem;
+  height: 0.5555555556rem;
+  border-radius: 50%;
+  background-color: #626262;
+}
+
+.volume_point-duration {
+  left: 100%;
+}
+
+.player__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #0d0d0d;
 }
