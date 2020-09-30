@@ -23,8 +23,6 @@ task( "clean", () => {
   return src( "${DIST_PATH}/**/*", { read: false }).pipe( rm() );
 });
 
-//const files = [
-//]
 
 task("copy:html",  () => {
   return src('{DIST_SRC}/*.html')
@@ -42,7 +40,7 @@ task("copy:images", () =>{
   return src('{DIST_SRC}/img/**/*')
   .pipe(dest(DIST_PATH))
   .pipe(reload({stream: true}));
-});
+})
 
 
 
@@ -80,7 +78,7 @@ task('scripts', () => {
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
- });
+ })
 
 task('server', () => {
   browserSync.init({
@@ -89,7 +87,7 @@ task('server', () => {
       },
       open: false
   });
-});
+})
 
 task ('watch', () => {
  watch("/src/styles/**/*.scss", series("styles"));
@@ -104,13 +102,13 @@ task("default", series(
    "styles",
    "scripts", 
    "copy:images" ),
-   parallel ('watch', 'server')));
+   parallel ('watch', 'server')))
 
    task("build", series(
     "clean", parallel("copy:html",
     "copy:styles",
      "styles",
      "scripts", 
-     "copy:images" )));
+     "copy:images" )))
   
 
