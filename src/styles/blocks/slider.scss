@@ -1,18 +1,30 @@
-.slider {
+.slider-container {
   &::after{
-      content:"";
-      width:20%;
-      height:20%;
-      max-width:rem(135px);
-      max-height:rem(112px);
-      position: absolute;
-      right:0;
-      bottom: 62%;
+    content: "";
+    width: 20%;
+    height: 20%;
+    max-width: 8.4375rem;
+    max-height: 7rem;
+    position: absolute;
+    right: rem(-73px);
+    bottom: rem(-50px);
       background: url("/img/product-section/blackberries.png") center center no-repeat;
       background-size: contain;
+
+      
       @include tablets {
         right:rem(-20px);
       }
+  }
+
+  &::before {
+    position: absolute;
+       width: rem(462px);
+        height: rem(326px);
+        right: rem(-73px);
+        bottom: rem(-77px);
+        background: url("/img/product-section/slider__leaf.png");
+  
   }
 }
 

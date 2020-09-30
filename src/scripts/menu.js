@@ -1,4 +1,5 @@
-let fixedNavbar = document.querySelector(".fixed-navbar");
+;(function() {
+  let fixedNavbar = document.querySelector(".fixed-navbar");
 let hamburger = document.querySelector(".hamburger-menu-link");
 
 fixedNavbar.addEventListener('wheel', ()=>{
@@ -39,3 +40,7 @@ for (let i = 0; i < fixedNavbarItemLength; i++) {
     document.body.classList.remove("locked");
   });
 }
+
+
+})()
+

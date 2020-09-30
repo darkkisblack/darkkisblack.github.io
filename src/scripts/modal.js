@@ -1,4 +1,5 @@
-/*const validateFields = (form, fieldsArray) => {
+;(function(){
+  /*const validateFields = (form, fieldsArray) => {
   fieldsArray.forEach((field) => {
     if (field.val().trim() === "") {
       field.addClass("input-error");
@@ -184,3 +185,6 @@ $(".app-submit-btn").click(e =>{
 
   $.fancybox.close();
 });
+
+})()
+

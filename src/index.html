@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="main.min.css">
 
 </head>
 
 <body>
   <div class="wrapper">
+
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidmenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <a href="#" class="chocco logo">
@@ -24,25 +25,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                  <a href="#" data-scroll-to="slider" class="slider">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#" data-scroll-to="products-menu-section" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#" data-scroll-to="reviews-section" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                  <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#" data-scroll-to="map-section" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -50,7 +51,7 @@
             <a href="tel:+78007003030" class="phone-number header__phone-number">
               <span class="phone-number__icon">
                 <svg class="phone-number__icon-white">
-                  <use xlink:href="/css/sprite.svg#phone"></use>
+                  <use xlink:href="/img/svg/sprite.svg#phone"></use>
 
                 </svg>
               </span>
@@ -66,27 +67,27 @@
           <div class="hero__title-section">
             <h1 class="hero__main-title">НАТУРАЛЬНЫЕ ШОКОЛАДНЫЕ БАТОНЧИКИ</h1>
             <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-            <a href="#" class="btn btn--theme--white">ЗАКАЗАТЬ</a>
+            <a href="#" data-scroll-to="order-section" class="btn btn--theme--white">ЗАКАЗАТЬ</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/icons/5.svg" alt="leaf icon">
+                  <img src="/img/svg/5.svg" alt="leaf icon">
                 </div>
                 <div class="feature__text">100% натуральный продукт</div>
               </li>
 
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/icons/6.svg" alt="leaf icon">
+                  <img src="/img/svg/6.svg" alt="leaf icon">
                 </div>
                 <div class="feature__text">3-5 дней доставка по РФ</div>
 
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <img src="/icons/4.svg" alt="leaf icon">
+                  <img src="/img/svg/4.svg" alt="leaf icon">
                 </div>
                 <div class="feature__text">Не портит фигуру</div>
 
@@ -98,7 +99,7 @@
 
       </section>
 
-      <section class="section benefits-section">
+      <section data-sidmenu-theme="black" data-section-id="benefits" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">ПОЧЕМУ CHOCCO?</h2>
@@ -110,7 +111,7 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="/icons/1.svg" alt="happy human icon" class="benefit__icon">
+                  <img src="/img/svg/1.svg" alt="happy human icon" class="benefit__icon">
                 </div>
               </div>
               <div class="benefit__text">
@@ -127,7 +128,7 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="/icons/3.svg" alt="testy icon" class="benefit__icon">
+                  <img src="/img/svg/3.svg" alt="testy icon" class="benefit__icon">
                 </div>
               </div>
               <div class="benefit__text">
@@ -145,7 +146,7 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="/icons/2.svg" alt="strong icon" class="benefit__icon">
+                  <img src="/img/svg/2.svg" alt="strong icon" class="benefit__icon">
                 </div>
               </div>
               <div class="benefit__text">
@@ -163,21 +164,22 @@
           </ul>
         </div>
       </section>
-      <section id="slider" class="section slider">
+
+      <section data-sidmenu-theme="black" data-section-id="slider" class="section slider">
         <div class="container slider-container">
           <a href="#" class="slider__arrow arrow-left"></a>
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
 
               <div class="slider-col slider__left-col">
-                <img class="slider-pic" src="/content/bars-1.png" alt="seaweed" />
+                <img class="slider-pic" src="/img/content/bars-1.png" alt="seaweed" />
               </div>
               <div class="slider-col slider__right-col">
                 <div class="products__ingredients">
                   <div class="ingredients">
                     <div class="ingredients__button">
                       <div class="ingredients__button-icon"><svg class="ingredients__button-icon-elem">
-                          <use xlink:href="/icons/slider.svg#chocolate-bar">
+                          <use xlink:href="/img/svg/slider.svg#chocolate-bar">
                           </use>
                         </svg></div>
                       <div class="ingredients__button-text">состав</div>
@@ -187,7 +189,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#grape"></use>
+                              <use xlink:href="/img/svg/slider.svg#grape"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Виноград</span></td>
@@ -196,7 +198,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#nut"></use>
+                              <use xlink:href="/img/svg/slider.svg#nut"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Грецкий орех</span></td>
@@ -205,7 +207,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#almond"></use>
+                              <use xlink:href="/img/svg/slider.svg#almond"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Кунжутное семя</span></td>
@@ -214,7 +216,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#powder"></use>
+                              <use xlink:href="/img/svg/slider.svg#powder"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Сухое молоко</span></td>
@@ -223,7 +225,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#honey"></use>
+                              <use xlink:href="/img/svg/slider.svg#honey"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Зам. сахара</span></td>
@@ -232,7 +234,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container">
                             <svg class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#beans"></use>
+                              <use xlink:href="/img/svg/slider.svg#beans"></use>
                             </svg>
                           </td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
@@ -270,7 +272,7 @@
 
                     <span class="rub products__values-rub-sign">
                       <svg class="ingredients__icon">
-                        <use xlink:href="/icons/slider.svg#rub"></use>
+                        <use xlink:href="/img/svg/slider.svg#rub"></use>
                       </svg>
                     </span>
                   </div>
@@ -284,14 +286,14 @@
             <li class="slider__item">
 
               <div class="slider-col slider__left-col">
-                <img class="slider-pic" src="/content/bars-1.png" alt="duo" />
+                <img class="slider-pic" src="/img/content/bars-1.png" alt="duo" />
               </div>
               <div class="slider-col slider__right-col">
                 <div class="products__ingredients">
                   <div class="ingredients">
                     <div class="ingredients__button">
                       <div class="ingredients__button-icon"><svg class="ingredients__button-icon-elem">
-                          <use xlink:href="/icons/slider.svg#chocolate-bar">
+                          <use xlink:href="/img/svg/slider.svg#chocolate-bar">
                           </use>
                         </svg></div>
                       <div class="ingredients__button-text">состав</div>
@@ -301,7 +303,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#grape"></use>
+                              <use xlink:href="/img/svg/slider.svg#grape"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Виноград</span></td>
@@ -310,7 +312,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#nut"></use>
+                              <use xlink:href="/img/svg/slider.svg#nut"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Грецкий орех</span></td>
@@ -319,7 +321,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#almond"></use>
+                              <use xlink:href="/img/svg/slider.svg#almond"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Кунжутное семя</span></td>
@@ -328,7 +330,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#powder"></use>
+                              <use xlink:href="/img/svg/slider.svg#powder"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Сухое молоко</span></td>
@@ -337,7 +339,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#honey"></use>
+                              <use xlink:href="/img/svg/slider.svg#honey"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Зам. сахара</span></td>
@@ -346,7 +348,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container">
                             <svg class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#beans"></use>
+                              <use xlink:href="/img/svg/slider.svg#beans"></use>
                             </svg>
                           </td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
@@ -383,7 +385,7 @@
 
                     <span class="rub products__values-rub-sign">
                       <svg class="ingredients__icon">
-                        <use xlink:href="/icons/slider.svg#rub"></use>
+                        <use xlink:href="/img/svg/slider.svg#rub"></use>
                       </svg>
                     </span>
                   </div>
@@ -396,14 +398,14 @@
             <li class="slider__item ">
 
               <div class="slider-col slider__left-col">
-                <img class="slider-pic" src="/content/bars-1.png" alt="rasp" />
+                <img class="slider-pic" src="/img/content/bars-1.png" alt="rasp" />
               </div>
               <div class="slider-col slider__right-col">
                 <div class="products__ingredients">
                   <div class="ingredients">
                     <div class="ingredients__button">
                       <div class="ingredients__button-icon"><svg class="ingredients__button-icon-elem">
-                          <use xlink:href="/icons/slider.svg#chocolate-bar">
+                          <use xlink:href="/img/svg/slider.svg#chocolate-bar">
                           </use>
                         </svg></div>
                       <div class="ingredients__button-text">состав</div>
@@ -413,7 +415,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#grape"></use>
+                              <use xlink:href="/img/svg/slider.svg#grape"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Виноград</span></td>
@@ -422,7 +424,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#nut"></use>
+                              <use xlink:href="/img/svg/slider.svg#nut"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Грецкий орех</span></td>
@@ -431,7 +433,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#almond"></use>
+                              <use xlink:href="/img/svg/slider.svg#almond"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Кунжутное семя</span></td>
@@ -440,7 +442,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#powder"></use>
+                              <use xlink:href="/img/svg/slider.svg#powder"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Сухое молоко</span></td>
@@ -449,7 +451,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container"><svg
                               class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#honey"></use>
+                              <use xlink:href="/img/svg/slider.svg#honey"></use>
                             </svg></td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
                               class="ingredients__text">Зам. сахара</span></td>
@@ -458,7 +460,7 @@
                         <tr class="ingredients__table-row">
                           <td class="ingredients__table-cell ingredients__icon-container">
                             <svg class="ingredients__icon">
-                              <use xlink:href="/icons/slider.svg#beans"></use>
+                              <use xlink:href="/img/svg/slider.svg#beans"></use>
                             </svg>
                           </td>
                           <td class="ingredients__table-cell ingredients__text-container"><span
@@ -495,12 +497,12 @@
 
                     <span class="rub products__values-rub-sign">
                       <svg class="ingredients__icon">
-                        <use xlink:href="/icons/slider.svg#rub"></use>
+                        <use xlink:href="/img/svg/slider.svg#rub"></use>
                       </svg>
                     </span>
                   </div>
                   <td class="products__values-block">
-                    <a class="btn form-btn btn--theme--slider">Заказать</a>
+                    <a data-scroll-to="order-section" class="btn form-btn btn--theme--slider">Заказать</a>
                   </td>
                 </div>
               </div>
@@ -509,7 +511,8 @@
           <a href="#" class="slider__arrow arrow-right"></a>
         </div>
       </section>
-      <section id="team" class="section team">
+
+      <section data-sidmenu-theme="black" data-section-id="team" class="section team">
         <div class="team__container container">
           <h2 class="team__title section-title">КОМАНДА</h2>
 
@@ -628,7 +631,8 @@
 
         </div>
       </section>
-      <section class="section products-menu-section">
+
+      <section data-sidmenu-theme="white" data-section-id="products-menu-section" class="section products-menu-section">
         <h1 class="title products-menu-section__title">Меню</h1>
         <ul class="products-menu">
           <li class="products-menu__item"><a class="products-menu__title" href="">
@@ -637,7 +641,7 @@
             </a>
             <div class="products-menu__content">
               <div class="products-menu__container">
-                <button class="products-menu__close" type="button">X  
+                <button class="products-menu__close" type="button">X
                 </button>
                 <div class="products-menu__content-text">Рекомендуем употреблять батончики вместе с кокосовым или
                   миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший
@@ -657,14 +661,14 @@
             <div class="products-menu__content">
               <div class="products-menu__container">
                 <button class="products-menu__close" type="button">Х</button>
-              <div class="products-menu__content-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший
-                друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
-                конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
-                поздравить с днём Победы. 
-              </div> 
+                <div class="products-menu__content-text">Рекомендуем употреблять батончики вместе с кокосовым или
+                  миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший
+                  друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
+                  конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                  поздравить с днём Победы.
+                </div>
               </div>
-             
+
             </div>
           </li>
           <li class="products-menu__item"><a class="products-menu__title" href=""> <img class="products-menu__image"
@@ -673,27 +677,28 @@
             </a>
             <div class="products-menu__content">
               <div class="products-menu__container">
-              <button class="products-menu__close" type="button">X</button>
-              <div class="products-menu__content-text">Рекомендуем употреблять батончики вместе с кокосовым или
-                миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший
-                друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
-                конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
-                поздравить с днём Победы. 
-              </div>  
+                <button class="products-menu__close" type="button">X</button>
+                <div class="products-menu__content-text">Рекомендуем употреблять батончики вместе с кокосовым или
+                  миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший
+                  друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля,
+                  конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                  поздравить с днём Победы.
+                </div>
               </div>
-              
+
             </div>
           </li>
         </ul>
       </section>
-      <section class="section reviews-section">
+
+      <section  data-sidmenu-theme="black" data-section-id="reviews-section" class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
             <ul class="reviews__display">
               <li class="reviews__item">
                 <div class="reviews__avatar">
-                  <img src="/reviews/photo1.jpg" alt="" class="reviews__avatar-img">
+                  <img src="/img/reviews/photo1.jpg" alt="" class="reviews__avatar-img">
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Лучший перекус</h3>
@@ -711,7 +716,7 @@
               </li>
               <li class="reviews__item reviews__item--active">
                 <div class="reviews__avatar">
-                  <img src="/reviews/photo2.jpg" alt="" class="reviews__avatar-img">
+                  <img src="/img/reviews/photo2.jpg" alt="" class="reviews__avatar-img">
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
@@ -725,7 +730,7 @@
               </li>
               <li class="reviews__item">
                 <div class="reviews__avatar">
-                  <img src="/reviews/photo3.jpg" alt="" class="reviews__avatar-img">
+                  <img src="/img/reviews/photo3.jpg" alt="" class="reviews__avatar-img">
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
@@ -745,14 +750,14 @@
           <ul class="reviews__switcher">
             <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
               <use class="interactive-avatar__link">
-                <img src="/reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar__img">
+                <img src="/img/reviews/photo1.jpg" alt="black hair girl" class="interactive-avatar__img">
               </use>
 
 
             </li>
             <li class="reviews__switcher-item interactive-avatar">
               <use class="interactive-avatar__link">
-                <img src="/reviews/photo2.jpg" alt="man" class="interactive-avatar__img">
+                <img src="/img/reviews/photo2.jpg" alt="man" class="interactive-avatar__img">
               </use>
 
 
@@ -760,7 +765,7 @@
             </li>
             <li class="reviews__switcher-item interactive-avatar">
               <use class="interactive-avatar__link">
-                <img src="/reviews/photo3.jpg" alt="ginger hair girl" class="interactive-avatar__img">
+                <img src="/img/reviews/photo3.jpg" alt="ginger hair girl" class="interactive-avatar__img">
               </use>
 
 
@@ -769,11 +774,12 @@
           </ul>
         </div>
       </section>
-      <section id ="player" class="section player-section">
+
+      <section data-sidmenu-theme="black" data-section-id="player" class="section player-section">
         <div class="player__container container">
-          
+
           <div class="player-wrap">
-              <h2 class="section-title player__title">КАК МЫ РАБОТАЕМ</h2>
+            <h2 class="section-title player__title">КАК МЫ РАБОТАЕМ</h2>
 
             <div class="player__wrapper">
               <div id="player_content"></div>
@@ -792,10 +798,10 @@
                 <span class="player__duration-estimate">0:00</span>
               </div>
               <div class="player_volume">
-                <a class="volume_btn player_btn"></a>        
+                <a class="volume_btn player_btn"></a>
                 <div class="volume_range-wrap">
                   <div class="player_range volume_range">
-                      <span class="play_point volume_point-duration"></span>
+                    <span class="play_point volume_point-duration"></span>
                   </div>
                 </div>
               </div>
@@ -803,221 +809,231 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <!--<div style="height: 600px"></div>-->
 
-    <section class="section order-section section--font-color--green">
-      <div class="container order__container">
-        <h2 class="section__title section__title--order">Закажите доставку</h2>
-        <form class="form" autocomplete="off">
-          <input type="hidden" name="to" value="saasdadad@mail.com">
-          <div class="form__col">
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__title">Имя</div>
-                <input type="text" name="name" class="form__input">
-              </label>
-              <label class="form__block">
-                <div class="form__title">Телефон</div>
-                <input type="text" name="phone" class="form__input">
-              </label>
-            </div>
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__title">Улица</div>
-                <input type="text" name="street" class="form__input">
-              </label>
-            </div>
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__title">Дом</div>
-                <input type="text" name="home" class="form__input ">
-              </label>
-              <label class="form__block">
-                <div class="form__title">Корпус</div>
-                <input type="text" name="part" class="form__input ">
-              </label>
-              <label class="form__block">
-                <div class="form__title">Квартира</div>
-                <input type="text" name="appartament" class="form__input">
-              </label>
-              <label class="form__block">
-                <div class="form__title">Этаж</div>
-                <input type="text" name="floor" class="form__input">
-              </label>
-            </div>
+      <section data-sidmenu-theme="white" data-section-id="order-section" class="section order-section section--font-color--green">
+        <div class="container order__container">
+          <h2 class="section__title section__title--order">Закажите доставку</h2>
+          <form class="form" autocomplete="off">
+            <input type="hidden" name="to" value="saasdadad@mail.com">
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Имя</div>
+                  <input type="text" name="name" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Телефон</div>
+                  <input type="text" name="phone" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Улица</div>
+                  <input type="text" name="street" class="form__input">
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Дом</div>
+                  <input type="text" name="home" class="form__input ">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Корпус</div>
+                  <input type="text" name="part" class="form__input ">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Квартира</div>
+                  <input type="text" name="appartament" class="form__input">
+                </label>
+                <label class="form__block">
+                  <div class="form__title">Этаж</div>
+                  <input type="text" name="floor" class="form__input">
+                </label>
+              </div>
 
+            </div>
+            <div class="form__col">
+              <div class="form__row">
+                <label class="form__block">
+                  <div class="form__title">Комментарий</div>
+                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                </label>
+
+              </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Потребуется сдача</div>
+
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Оплата по карте</div>
+
+                </label>
+              </div>
+              <div class="form__controls">
+                <label class="radio radio--checkbox">
+                  <input type="checkbox" name="call" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="radio__title">Не перезванивать</div>
+
+                </label>
+              </div>
+              <div class="form__btns">
+                <input type="submit" value="Заказать" class="btn form-btn btn--theme--green">
+                <input type="reset" value="Очистить" class="btn form-btn btn--theme--transparent">
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </section>
+      <section data-sidmenu-theme="black" data-section-id="map-section" class="section map-section">
+        <div id="map"></div>
+        <footer class="footer">
+          <div class="container footer__container">
+            <address class="contacts">
+              <div class="contacts__place">
+                Москва, ул.Новый Арбат, д.31/12
+              </div>
+
+              <a href="tel:+78009039090" class="phone-number phone-number--theme--green">
+                <span class="phone-number__icon">
+                  <svg class="phone-number__icon-elem">
+                    <use xlink:href="/img/svg/sprite.svg#phone"></use>
+
+                  </svg>
+                </span>
+                <span class="phone-number__text">8 800 903 90 90</span>
+              </a>
+            </address>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="/img/svg/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="/img/svg/sprite.svg#f"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="/img/svg/sprite.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="/img/svg/sprite.svg#tv"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="form__col">
-            <div class="form__row">
-              <label class="form__block">
-                <div class="form__title">Комментарий</div>
-                <textarea name="comment" class="form__input form__input--textarea"></textarea>
-              </label>
-
-            </div>
-            <div class="form__controls">
-              <label class="radio">
-                <input type="radio" name="option" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Потребуется сдача</div>
-
-              </label>
-              <label class="radio">
-                <input type="radio" name="option" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Оплата по карте</div>
-
-              </label>
-            </div>
-            <div class="form__controls">
-              <label class="radio radio--checkbox">
-                <input type="checkbox" name="call" class="radio__elem">
-                <div class="radio__visible"></div>
-                <div class="radio__title">Не перезванивать</div>
-
-              </label>
-            </div>
-            <div class="form__btns">
-              <input type="submit" value="Заказать" class="btn form-btn btn--theme--green">
-              <input type="reset" value="Очистить" class="btn form-btn btn--theme--transparent">
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-
-  </div>
-
-  <nav class="fixed-menu">
-    <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-      <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a>
-      </li>
-    </ul>
-  </nav>
-  <!--<div style="height: 100px"></div>-->
-  <section  class="section map-section">
-    <div id="map"></div>
-    <footer class="footer">
-      <div class="container footer__container">
-        <address class="contacts">
-          <div class="contacts__place">
-            Москва, ул.Новый Арбат, д.31/12
-          </div>
-
-          <a href="tel:+78009039090" class="phone-number phone-number--theme--green">
-            <span class="phone-number__icon">
-              <svg class="phone-number__icon-elem">
-                <use xlink:href="/css/sprite.svg#phone"></use>
-
-              </svg>
-            </span>
-            <span class="phone-number__text">8 800 903 90 90</span>
-          </a>
-        </address>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon">
-                <use xlink:href="/css/sprite.svg#vk"></use>
-              </svg>
-            </a>
-
+        </footer>
+      </section> 
+        
+      <nav class="fixed-navbar">
+        <ul class="fixed-navbar__list">
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">О нас</a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon">
-                <use xlink:href="/css/sprite.svg#f"></use>
-              </svg>
-            </a>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Батончики</a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon">
-                <use xlink:href="/css/sprite.svg#in"></use>
-              </svg>
-            </a>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Команда</a>
           </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <svg class="socials__icon">
-                <use xlink:href="/css/sprite.svg#tv"></use>
-              </svg>
-            </a>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Меню</a>
+          </li>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Отзывы</a>
+          </li>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Заказать</a>
+          </li>
+          <li class="fixed-navbar__item">
+            <a href="" class="fixed-navbar__link">Контакты</a>
           </li>
         </ul>
-      </div>
-    </footer>
-  </section>
-  <div id="modal" class="modal">
-    <div class="modal__container">
-      <div class="modal__content">
-        Сообщение отправлено
-      </div>
-      <div class="modal__button-container">
-        <a href="#" class="btn app-submit-btn btn--theme--green">Закрыть</a>
+        <span class="menu-fixed__close menu__accordion-close"></span>
+      </nav>      
+    </div>
+     <nav class="fixed-menu fixed-menu--shadowed">
+        <ul class="fixed-menu__list">
+          <li class="fixed-menu__item fixed-menu__item--active">
+            <a href="" class="fixed-menu__link" data-scroll-to="hero"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="benefits"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="slider"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="team"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="products-menu-section"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="reviews-section"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="player"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="order-section"></a>
+          </li>
+          <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="map-section"></a>
+          </li>
+        </ul>
+      </nav>      
+  </div>  
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__content">
+          Сообщение отправлено
+        </div>
+        <div class="modal__button-container">
+          <a href="#" class="btn app-submit-btn btn--theme--green">Закрыть</a>
+        </div>
       </div>
     </div>
-  </div>
-  <nav class="fixed-navbar">
-    <ul class="fixed-navbar__list">
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="1">О нас</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="2">Батончики</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="3">Команда</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="4">Меню</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="5">Отзывы</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="7">Заказать</a>
-      </li>
-      <li class="fixed-navbar__item">
-        <a href="" class="fixed-navbar__link" data-scroll-to="8">Контакты</a>
-      </li>
-    </ul>
-    <span class="menu-fixed__close menu__accordion-close"></span>
-  </nav>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="/scripts/menu.js"></script>
-  <script src="/scripts/slider.js"></script>
-  <script src="/scripts/team.js"></script>
-  <script src="/scripts/reviews.js"></script>
-  <script src="/scripts/modal.js"></script>
-  <script src="/scripts/menu-acc.js"></script>
-  <script src="/scripts/player.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
-  <script src="/scripts/map.js"></script>
-  <script src="/scripts/one-page.js"></script>
-
-</body>
+   </body>
+   
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+    <script src="main.min.js"></script>
+   <!-- <script src="/scripts/one-page.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/slider.js"></script>
+    <script src="/scripts/team.js"></script>
+    <script src="/scripts/reviews.js"></script>
+    <script src="/scripts/modal.js"></script>
+    <script src="/scripts/menu-acc.js"></script>
+    <script src="/scripts/player.js"></script>-->
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <!--<script src="/scripts/map.js"></script>
+ 
+   <script type="text/javascript" src="scripts/jquery.touchSwipe.js"></script>-->
 
 </html>

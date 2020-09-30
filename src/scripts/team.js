@@ -1,4 +1,5 @@
-let teamItem = document.querySelectorAll(".team__item"),
+;(function(){
+  let teamItem = document.querySelectorAll(".team__item"),
   teamItemLength = teamItem.length;
 let teamItemName = document.querySelectorAll(".name"),
   teamItemNameLength = teamItemName.length;
@@ -15,3 +16,4 @@ for (let i = 0; i < teamItemNameLength; i++) {
     }
   });
 }
+})()

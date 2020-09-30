@@ -8,11 +8,11 @@ z-index: $z-fixed-menu;
 .fixed-menu__item {
   margin-bottom: rem(5px);
 
-  &--active {
-    .fixed-menu__link {
-      border-color: #ffffff;
-    }
-  }
+ &--active {
+   .fixed-menu__link {
+     border-color: #ffffff;
+   }
+ }
 }
 
 .fixed-menu__link {
@@ -35,4 +35,8 @@ z-index: $z-fixed-menu;
     left: 50%;
     transform: translate(-50%,-50%);
   }
+}
+
+.fixed-menu--shadowed {
+  background: #61c4d9;
 }
