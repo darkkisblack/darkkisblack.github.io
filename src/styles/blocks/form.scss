@@ -15,7 +15,7 @@
   .form::after {
     content: "";
     position: absolute;
-    background: url(/img/form/berry.png);
+    background: url("./img/form/berry.png");
     width: rem(196px);
     height: rem(264px);
         bottom: 27.555556rem;

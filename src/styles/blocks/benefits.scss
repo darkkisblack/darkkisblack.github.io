@@ -22,7 +22,7 @@
   }
 
   &:before {
-    content: url(/img/hero/separator.png);
+    content: url("./img/hero/separator.png");
     position: absolute;
     top: rem(30px);
     right: 0;

@@ -1,6 +1,6 @@
 .benefits-section {
   position: relative;
-  background: url("/img/hero/side-leaf.png") left top 57% no-repeat;
+  background: url("./img/hero/side-leaf.png") left top 57% no-repeat;
 
   @include tablets {
     background-position: left top -45%;
@@ -11,7 +11,7 @@
   }
 
   &:before {
-    content: url("/img/hero/bars-and-berries.png");
+    content: url("./img/hero/bars-and-berries.png");
     position: absolute;
     bottom: rem(-273px);
     left: 0;

@@ -1,5 +1,5 @@
 .order-section {
-  background: url("/img/order/pattern.png") center center no-repeat;
+  background: url("./img/order/pattern.png") center center no-repeat;
   background-size: cover;
    
   
@@ -9,7 +9,7 @@
      position: absolute;
     bottom: rem(-15px);
     left: -6%;
-    content: url(/img/order/berries-order.png);
+    content: url("./img/order/berries-order.png");
 
     @include phones {
       content: none;
@@ -20,7 +20,7 @@
    }
   
 .order__container:after {
-    content: url(/img/order/leaf-order.png);
+    content: url("./img/order/leaf-order.png");
     position: absolute;
     bottom: rem(-8px);
     right: -9%;  
