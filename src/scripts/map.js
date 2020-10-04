@@ -33,5 +33,3 @@
   ymaps.ready(init);
 
 })()
-
-//
